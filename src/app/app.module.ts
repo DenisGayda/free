@@ -9,7 +9,7 @@ import { HeaderComponent } from './components/smart/header/header.component';
 import { LeftPanelComponent } from './components/smart/left-panel/left-panel.component';
 import { StockChartsComponent } from './components/smart/stock-charts/stock-charts.component';
 import { HistoryPanelComponent } from './components/smart/history-panel/history-panel.component';
-
+import { NvD3Module } from 'ng2-nvd3';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import { HistoryPanelComponent } from './components/smart/history-panel/history-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NvD3Module,
   ],
   providers: [],
   bootstrap: [AppComponent]
